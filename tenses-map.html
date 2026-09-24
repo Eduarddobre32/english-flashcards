@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>🕰 Карта времён</title><style>
+:root{--bg:#eef2f7;--card:#fff;--ink:#1a2733;--accent:#2c5f8a;--soft:#cbd8e4;--head:#e8eff5;--zebra:#f6f9fb;--muted:#6b7f92;--band:#e8913a;--bandbg:rgba(232,145,58,.28);--good:#2e7d4f;--bad:#b3403a}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1720;--card:#1a2632;--ink:#e8eef4;--accent:#5b9bd5;--soft:#2c3e4f;--head:#243240;--zebra:#1e2b38;--muted:#8fa3b5;--band:#f0a55a;--bandbg:rgba(240,165,90,.3);--good:#5cc28a;--bad:#e27a72}}
+*{box-sizing:border-box}
+body{font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;background:var(--bg);color:var(--ink);
+max-width:980px;margin:0 auto;padding:18px 16px 60px;line-height:1.5;font-size:15px}
+h1{font-size:23px;border-bottom:3px solid var(--accent);padding-bottom:6px;color:var(--accent);margin-bottom:6px}
+h2{font-size:19px;color:var(--accent);margin:30px 0 10px}
+a{color:var(--accent)}
+.nav{display:inline-block;margin:0 8px 14px 0;font-size:14px;padding:8px 14px;border:1.5px solid var(--accent);border-radius:10px;text-decoration:none;color:var(--accent);font-weight:600}
+.lead{color:var(--muted);margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--soft);border-radius:14px;padding:14px 14px 12px}
+.card h3{margin:0;font-size:16.5px;display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
+.card h3 .ico{font-size:14px;color:var(--muted);font-weight:500}
+.formula{display:inline-block;margin:6px 0 2px;padding:3px 10px;border-radius:8px;background:var(--head);font-weight:700;font-size:14.5px}
+.mean{margin:6px 0 4px;font-weight:600}
+svg{width:100%;height:auto;display:block;margin:4px 0}
+.ax{stroke:var(--muted);stroke-width:2}
+.axh{fill:var(--muted)}
+.now{stroke:var(--bad);stroke-width:3;stroke-linecap:round}
+.lbl{fill:var(--muted);font-size:11px;font-family:inherit}
+.lbla{fill:var(--accent);font-size:11px;font-weight:700;font-family:inherit}
+.ev{stroke:var(--accent);stroke-width:3;stroke-linecap:round;fill:none}
+.evf{fill:var(--accent)}
+.evm{stroke:var(--muted);stroke-width:2.5;stroke-linecap:round}
+.evmf{fill:var(--muted)}
+.band{fill:var(--bandbg);stroke:var(--band);stroke-width:1.5}
+.dot{fill:var(--accent)}
+.dash{stroke:var(--accent);stroke-width:2;fill:none;stroke-dasharray:4 3}
+.ex{margin:6px 0 0;padding-left:18px}
+.ex li{margin:2px 0}
+.mk{font-size:13px;color:var(--muted);margin-top:8px}
+.mk b{color:var(--ink);font-weight:600}
+.box{background:var(--card);border:2px solid var(--accent);border-radius:14px;padding:14px 16px;margin:16px 0}
+.box h3{margin:0 0 6px;font-size:16.5px}
+table{border-collapse:collapse;width:100%;margin:8px 0}
+.tw{overflow-x:auto}
+th,td{border:1px solid var(--soft);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:var(--head)}
+.ok{color:var(--good);font-weight:700}.no{color:var(--bad);font-weight:700}
+s{color:var(--bad)}
+.foot{margin-top:40px;font-size:13px;color:var(--muted);text-align:center}
+</style></head><body>
+<a class="nav" href="lessons.html">← ко всем урокам</a><a class="nav" href="grammar.html#t25">💊 Тема 25</a>
+<h1>🕰 Карта времён: прошлое и настоящее</h1>
+<p class="lead">Сделано по твоей рукописной таблице (24.09). Красный ✕ — «сейчас». Синяя стрелка — событие-точка. Оранжевая полоса — процесс.</p>
+
+<h2>Прошлое</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Past Simple <span class="ico">📷 фото</span></h3>
+<span class="formula">V2 — вторая форма</span>
+<svg viewBox="0 0 300 70" role="img" aria-label="Одна точка в прошлом">
+<line x1="10" y1="45" x2="285" y2="45" class="ax"/><polygon points="285,40 294,45 285,50" class="axh"/>
+<line x1="100" y1="12" x2="100" y2="34" class="ev"/><polygon points="94,32 106,32 100,42" class="evf"/>
+<text x="108" y="22" class="lbla">at 3 a.m.</text>
+<path d="M224,39 L236,51 M236,39 L224,51" class="now"/><text x="230" y="65" text-anchor="middle" class="lbl">now</text>
+</svg>
+<div class="mean">Случилось тогда и закончилось. Есть «когда».</div>
+<ul class="ex">
+<li>I <b>intubated</b> him at 3 a.m.</li>
+<li>We <b>transferred</b> her yesterday.</li>
+<li><b>Did</b> you <b>call</b> the family? · I <b>didn't see</b> him.</li>
+</ul>
+<div class="mk"><b>Слова-маркеры:</b> yesterday, last night, at 3, two days ago, in 2019</div>
+</div>
+
+<div class="card">
+<h3>Past Continuous <span class="ico">🎥 видео</span></h3>
+<span class="formula">was / were + -ing</span>
+<svg viewBox="0 0 300 70" role="img" aria-label="Отрезок-процесс в прошлом, прерванный событием">
+<line x1="10" y1="45" x2="285" y2="45" class="ax"/><polygon points="285,40 294,45 285,50" class="axh"/>
+<rect x="55" y="39" width="110" height="12" rx="4" class="band"/>
+<line x1="120" y1="8" x2="120" y2="32" class="ev"/><polygon points="114,30 126,30 120,40" class="evf"/>
+<text x="128" y="18" class="lbla">he coded</text>
+<text x="110" y="65" text-anchor="middle" class="lbl">was talking…</text>
+<path d="M224,39 L236,51 M236,39 L224,51" class="now"/><text x="230" y="65" text-anchor="middle" class="lbl">now</text>
+</svg>
+<div class="mean">Был в процессе в какой-то момент прошлого. Часто его прерывает событие.</div>
+<ul class="ex">
+<li>I <b>was talking</b> to the family when he <b>coded</b>.</li>
+<li>At 2 a.m. we <b>were</b> still <b>waiting</b> for the CT.</li>
+<li>What <b>were</b> you <b>doing</b> when I called?</li>
+</ul>
+<div class="mk"><b>Слова-маркеры:</b> when, while, at that moment, all night</div>
+</div>
+
+<div class="card">
+<h3>Past Perfect <span class="ico">🌉 мост назад</span></h3>
+<span class="formula">had + V3</span>
+<svg viewBox="0 0 300 70" role="img" aria-label="Две точки в прошлом, первая раньше второй">
+<line x1="10" y1="45" x2="285" y2="45" class="ax"/><polygon points="285,40 294,45 285,50" class="axh"/>
+<line x1="70" y1="14" x2="70" y2="34" class="ev"/><polygon points="64,32 76,32 70,42" class="evf"/>
+<text x="70" y="10" text-anchor="middle" class="lbla">1</text>
+<line x1="155" y1="14" x2="155" y2="36" class="evm"/><polygon points="150,33 160,33 155,42" class="evmf"/>
+<text x="155" y="10" text-anchor="middle" class="lbl">2</text>
+<text x="65" y="65" text-anchor="middle" class="lbla">had arrested</text>
+<text x="155" y="65" text-anchor="middle" class="lbl">I got there</text>
+<path d="M224,39 L236,51 M236,39 L224,51" class="now"/><text x="230" y="65" text-anchor="middle" class="lbl">now</text>
+</svg>
+<div class="mean">Прошлое до прошлого: случилось РАНЬШЕ другого события в прошлом.</div>
+<ul class="ex">
+<li>He <b>had</b> already <b>arrested</b> when I got there.</li>
+<li>By the time the son arrived, she <b>had passed away</b>.</li>
+<li>I realized I <b>had forgotten</b> the consent form.</li>
+</ul>
+<div class="mk"><b>Слова-маркеры:</b> by the time, already, before, when (+ второе событие)</div>
+</div>
+</div>
+
+<h2>Настоящее</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Present Simple <span class="ico">📷 фото</span></h3>
+<span class="formula">V1 · he/she/it + s</span>
+<svg viewBox="0 0 300 70" role="img" aria-label="Повторяющиеся точки по всей линии">
+<line x1="10" y1="45" x2="285" y2="45" class="ax"/><polygon points="285,40 294,45 285,50" class="axh"/>
+<circle cx="30" cy="45" r="4" class="dot"/><circle cx="62" cy="45" r="4" class="dot"/><circle cx="94" cy="45" r="4" class="dot"/><circle cx="126" cy="45" r="4" class="dot"/><circle cx="158" cy="45" r="4" class="dot"/><circle cx="190" cy="45" r="4" class="dot"/><circle cx="262" cy="45" r="4" class="dot"/>
+<text x="110" y="28" text-anchor="middle" class="lbla">every day · twice a month</text>
+<path d="M224,39 L236,51 M236,39 L224,51" class="now"/><text x="230" y="65" text-anchor="middle" class="lbl">now</text>
+</svg>
+<div class="mean">Так бывает всегда: привычка, факт, расписание.</div>
+<ul class="ex">
+<li>I <b>work</b> in the ICU.</li>
+<li>I <b>do</b> nights twice a month.</li>
+<li>The shift <b>starts</b> at seven. · <b>Does</b> he <b>know</b>?</li>
+</ul>
+<div class="mk"><b>Слова-маркеры:</b> always, usually, every day, on Tuesdays, never</div>
+</div>
+
+<div class="card">
+<h3>Present Continuous <span class="ico">🎥 видео</span></h3>
+<span class="formula">am / is / are + -ing</span>
+<svg viewBox="0 0 300 70" role="img" aria-label="Короткий отрезок вокруг сейчас">
+<line x1="10" y1="45" x2="285" y2="45" class="ax"/><polygon points="285,40 294,45 285,50" class="axh"/>
+<rect x="190" y="39" width="80" height="12" rx="4" class="band"/>
+<text x="230" y="26" text-anchor="middle" class="lbla">right now · these days</text>
+<path d="M224,39 L236,51 M236,39 L224,51" class="now"/><text x="230" y="65" text-anchor="middle" class="lbl">now</text>
+</svg>
+<div class="mean">Прямо сейчас, временно «в эти дни», или план, уже стоящий в календаре.</div>
+<ul class="ex">
+<li>I'<b>m talking</b> to the family, I'll call you back.</li>
+<li>We'<b>re</b> short on nurses this month.</li>
+<li>I'<b>m meeting</b> them on Monday. <span class="mk">(план)</span></li>
+</ul>
+<div class="mk"><b>Слова-маркеры:</b> now, right now, this month, these days · on Monday (план)</div>
+</div>
+
+<div class="card">
+<h3>Present Perfect <span class="ico">🌉 мост</span></h3>
+<span class="formula">have / has + V3</span>
+<svg viewBox="0 0 300 70" role="img" aria-label="Событие в прошлом без точного времени, стрелка результата к сейчас">
+<line x1="10" y1="45" x2="285" y2="45" class="ax"/><polygon points="285,40 294,45 285,50" class="axh"/>
+<circle cx="105" cy="45" r="6" class="dash"/>
+<text x="105" y="65" text-anchor="middle" class="lbl">когда? — неважно</text>
+<path d="M110,37 Q170,2 223,34" class="ev"/><polygon points="215,33 227,30 223,41" class="evf"/>
+<text x="168" y="14" text-anchor="middle" class="lbla">результат сейчас</text>
+<path d="M224,39 L236,51 M236,39 L224,51" class="now"/><text x="240" y="65" text-anchor="middle" class="lbl">now</text>
+</svg>
+<div class="mean">Было, и важно, что из этого СЕЙЧАС. Время не называем.</div>
+<ul class="ex">
+<li>She'<b>s been extubated</b>. <span class="mk">(дышит сама)</span></li>
+<li>I'<b>ve</b> just <b>heard</b>.</li>
+<li><b>Have</b> you ever <b>worked</b> abroad?</li>
+</ul>
+<div class="mk"><b>Слова-маркеры:</b> just, already, yet, ever, never, so far</div>
+</div>
+
+<div class="card">
+<h3>Present Perfect Continuous <span class="ico">🌉🎥</span></h3>
+<span class="formula">have / has been + -ing</span>
+<svg viewBox="0 0 300 70" role="img" aria-label="Отрезок от точки в прошлом до сейчас">
+<line x1="10" y1="45" x2="285" y2="45" class="ax"/><polygon points="285,40 294,45 285,50" class="axh"/>
+<rect x="80" y="39" width="140" height="12" rx="4" class="band"/>
+<line x1="80" y1="14" x2="80" y2="34" class="ev"/><polygon points="74,32 86,32 80,42" class="evf"/>
+<text x="80" y="65" text-anchor="middle" class="lbla">since 5 a.m.</text>
+<text x="152" y="28" text-anchor="middle" class="lbl">…и до сих пор</text>
+<path d="M224,39 L236,51 M236,39 L224,51" class="now"/><text x="230" y="65" text-anchor="middle" class="lbl">now</text>
+</svg>
+<div class="mean">Началось в прошлом и идёт до сих пор. Важно, СКОЛЬКО.</div>
+<ul class="ex">
+<li>I'<b>ve been</b> up since 5.</li>
+<li>How long <b>have</b> you <b>been waiting</b>?</li>
+<li>I'<b>ve been working</b> here for 20 years.</li>
+</ul>
+<div class="mk"><b>Слова-маркеры:</b> since, for, how long, all day · ⚠️ состояния (be, know, want) → have + V3: <i>I've known him for years</i></div>
+</div>
+</div>
+
+<div class="box">
+<h3>🚧 Главная граница: Past Simple или Present Perfect?</h3>
+<p>Одно и то же событие, два разных вопроса:</p>
+<div class="tw"><table><thead><tr><th>Past Simple — «КОГДА?»</th><th>Present Perfect — «И ЧТО ТЕПЕРЬ?»</th></tr></thead><tbody>
+<tr><td>He <b>was extubated</b> at ten.</td><td>He'<b>s been extubated</b>. (дышит сам)</td></tr>
+<tr><td>I <b>heard</b> about it last night.</td><td>I'<b>ve</b> just <b>heard</b>.</td></tr>
+<tr><td>I <b>worked</b> in Germany in 2015. (всё, закончилось)</td><td>I'<b>ve worked</b> abroad. (опыт в жизни)</td></tr>
+</tbody></table></div>
+<p>🧭 <b>Назвал время</b> (yesterday, at 3, ago) → только Past Simple. <span class="no">✗</span> <s>I've seen him yesterday</s> → <span class="ok">✓</span> I <b>saw</b> him yesterday.</p>
+</div>
+
+<div class="box">
+<h3>⚠️ V2 и V3 — не путать</h3>
+<p><b>Past Simple = V2</b>, а <b>все Perfect = V3</b>. У правильных глаголов они совпадают (<i>intubated — intubated</i>), поэтому легко перепутать. У неправильных — разные:</p>
+<div class="tw"><table><thead><tr><th>V1</th><th>V2 — Past Simple</th><th>V3 — have / had / was + …</th></tr></thead><tbody>
+<tr><td>go</td><td>went</td><td>gone</td></tr>
+<tr><td>take</td><td>took</td><td>taken</td></tr>
+<tr><td>see</td><td>saw</td><td>seen</td></tr>
+<tr><td>give</td><td>gave</td><td>given</td></tr>
+<tr><td>be</td><td>was / were</td><td>been</td></tr>
+<tr><td>do</td><td>did</td><td>done</td></tr>
+<tr><td>intubate</td><td>intubated</td><td>intubated</td></tr>
+</tbody></table></div>
+<p><span class="no">✗</span> <s>I seen him</s> · <s>He has went</s> → <span class="ok">✓</span> I <b>saw</b> him · He <b>has gone</b></p>
+</div>
+
+<p class="lead">Будущее (will / going to / Present Continuous для планов) — урок 3 мини-курса, добавим сюда же третьей строкой.</p>
+<div class="foot">Английский · личный курс · карта времён</div>
+</body></html>
